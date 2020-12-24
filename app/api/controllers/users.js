@@ -69,7 +69,7 @@ module.exports = {
             if (err) {
               console.log("Error Occurs");
             } else {
-              console.log('email response', data)
+              console.log("email response", data);
               console.log("Email sent successfully");
             }
           });
