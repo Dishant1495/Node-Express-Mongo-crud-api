@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
     cb(null, new Date().toISOString().replace(/:/g, "-") + file.originalname);
   },
 });
-const upload = multer({ storage: storage })
+const upload = multer({ storage: storage });
 app.set("secretKey", "nodeRestApi"); // jwt secret token
 // connection to mongodb
 mongoose.connection.on(
